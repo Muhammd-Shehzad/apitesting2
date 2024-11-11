@@ -1,5 +1,4 @@
-import 'package:apitesting2/Ui/HomwScreen/GetPost2/post_provider.dart';
-import 'package:apitesting2/main.dart';
+import 'package:apitesting2/Ui/APIsWithModel/GetPost2/post_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
@@ -34,7 +33,7 @@ class _Get1PostState extends State<Get1Post> {
                             child: Column(
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                       vertical: 10, horizontal: 10),
                                   child: Text(
                                     '${modle.listName[index].postId}',
@@ -46,7 +45,7 @@ class _Get1PostState extends State<Get1Post> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                       vertical: 10, horizontal: 10),
                                   child: Text(
                                     '${modle.listName[index].id}',
@@ -58,7 +57,7 @@ class _Get1PostState extends State<Get1Post> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                       vertical: 10, horizontal: 10),
                                   child: Text(
                                     '${modle.listName[index].name}',
@@ -70,7 +69,7 @@ class _Get1PostState extends State<Get1Post> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                       vertical: 10, horizontal: 10),
                                   child: Text(
                                     '${modle.listName[index].email}',

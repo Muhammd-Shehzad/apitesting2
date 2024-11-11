@@ -21,23 +21,22 @@ class ZaheenApp {
     name = json['name'];
     boardId = json['board_id'];
     thumbnail = json['thumbnail'];
-    status =
-        json['status'] != null ? new Status.fromJson(json['status']) : null;
+    status = json['status'] != null ? Status.fromJson(json['status']) : null;
     courseTypeId = json['course_type_id'];
     thumbnailUrl = json['thumbnailUrl'];
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
-    data['board_id'] = this.boardId;
-    data['thumbnail'] = this.thumbnail;
-    if (this.status != null) {
-      data['status'] = this.status!.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['name'] = name;
+    data['board_id'] = boardId;
+    data['thumbnail'] = thumbnail;
+    if (status != null) {
+      data['status'] = status!.toJson();
     }
-    data['course_type_id'] = this.courseTypeId;
-    data['thumbnailUrl'] = this.thumbnailUrl;
+    data['course_type_id'] = courseTypeId;
+    data['thumbnailUrl'] = thumbnailUrl;
     return data;
   }
 }
@@ -54,8 +53,8 @@ class Status {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['type'] = this.type;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['type'] = type;
     data['data'] = this.data;
     return data;
   }

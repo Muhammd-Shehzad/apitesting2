@@ -14,7 +14,11 @@ class HomeProvider extends ChangeNotifier {
     var uriData = jsonDecode(res.body.toString());
     if (res.statusCode == 200) {
       for (var data in uriData) {
-        appList.add(ZaheenApp.fromJson(data));
+        ZaheenApp appData = ZaheenApp(
+            thumbnail: data['thumbnail'],
+            thumbnailUrl: data['thumbnailUrl'],
+            name: data['name']);
+        appList.add(appData);
       }
       notifyListeners();
       return appList;

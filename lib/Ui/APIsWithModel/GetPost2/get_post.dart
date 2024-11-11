@@ -1,4 +1,4 @@
-import 'package:apitesting2/Ui/HomwScreen/GetPost2/post_provider.dart';
+import 'package:apitesting2/Ui/APIsWithModel/GetPost2/post_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +18,7 @@ class _GetPostState extends State<GetPost> {
       child: Consumer<PostProvider>(
         builder: (context, model, child) => Scaffold(
           appBar: AppBar(
-            title: Text('Get Post Data 2'),
+            title: const Text('Get Post Data 2'),
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
