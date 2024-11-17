@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:apitesting2/Model/post_model2.dart';
+import 'package:apitesting2/Ui/APIsWithModel/Model/post_model2.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

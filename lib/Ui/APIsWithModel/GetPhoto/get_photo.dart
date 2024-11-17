@@ -1,4 +1,4 @@
-import 'package:apitesting2/Model/photo_model.dart';
+import 'package:apitesting2/Ui/APIsWithModel/Model/photo_model.dart';
 import 'package:apitesting2/Ui/APIsWithModel/GetPhoto/photo_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

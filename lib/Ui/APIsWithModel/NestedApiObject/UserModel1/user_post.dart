@@ -1,4 +1,4 @@
-import 'package:apitesting2/Model/NestedModel/user_model.dart';
+import 'package:apitesting2/Ui/APIsWithModel/Model/NestedModel/user_model.dart';
 import 'package:apitesting2/Ui/APIsWithModel/NestedApiObject/UserModel1/reusable_row.dart';
 import 'package:apitesting2/Ui/APIsWithModel/NestedApiObject/UserModel1/user_provider.dart';
 import 'package:flutter/material.dart';

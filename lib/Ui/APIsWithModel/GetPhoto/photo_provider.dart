@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:apitesting2/Model/photo_model.dart';
+import 'package:apitesting2/Ui/APIsWithModel/Model/photo_model.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

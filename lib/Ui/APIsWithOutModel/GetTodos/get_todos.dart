@@ -22,8 +22,11 @@ class _GetTodosState extends State<GetTodos> {
             title: Text('ToDos APIs'),
           ),
           body: FutureBuilder(
-              future: model.getTodosData(),
-              builder: (context, snapshot) {
+            future: model.getTodosData(),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return CircularProgressIndicator();
+              } else {
                 return Expanded(
                   child: ListView.builder(
                       itemCount: model.data.length,
@@ -50,7 +53,9 @@ class _GetTodosState extends State<GetTodos> {
                         );
                       }),
                 );
-              }),
+              }
+            },
+          ),
         ),
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:apitesting2/Ui/APIsWithModel/GetComment/get_comment.dart';
 import 'package:apitesting2/Ui/APIsWithOutModel/GetTodos/get_todos.dart';
 import 'package:apitesting2/Ui/APIsWithOutModel/GetUser/get_user.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,8 @@ void main() {
       designSize: const Size(360, 390),
       splitScreenMode: true,
       minTextAdapt: true,
-      builder: (context, child) => GetMaterialApp(home: GetTodos()
+      builder: (context, child) => GetMaterialApp(home: GetComment()
+          // GetTodos()
           // GetUser() // user without model
           // UserPost()
           // GetComment()

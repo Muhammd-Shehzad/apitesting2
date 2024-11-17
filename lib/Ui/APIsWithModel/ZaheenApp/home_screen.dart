@@ -1,4 +1,4 @@
-import 'package:apitesting2/Model/zaheenapp_model.dart';
+import 'package:apitesting2/Ui/APIsWithModel/Model/zaheenapp_model.dart';
 import 'package:apitesting2/Ui/APIsWithModel/ZaheenApp/home_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
