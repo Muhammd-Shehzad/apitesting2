@@ -19,7 +19,7 @@ class _UserPostState extends State<UserPost> {
       child: Consumer<UserProviderWithoutModel>(
         builder: (context, model, child) => Scaffold(
           appBar: AppBar(
-            title: Text('Get User APIs'),
+            title: const Text('Get User APIs'),
           ),
           body: Column(
             children: [

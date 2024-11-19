@@ -17,7 +17,7 @@ class _GetCommentState extends State<GetComment> {
       child: Consumer<CommentProvider>(
         builder: (context, model, child) => Scaffold(
           appBar: AppBar(
-            title: Text('Comment APIs'),
+            title: const Text('Comment APIs'),
           ),
           body: Column(
             children: [

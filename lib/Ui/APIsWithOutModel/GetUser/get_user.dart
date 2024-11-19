@@ -18,7 +18,7 @@ class _GetUserState extends State<GetUser> {
       child: Consumer<UserProvider>(
         builder: (context, model, child) => Scaffold(
           appBar: AppBar(
-            title: Text('User API withot Model'),
+            title: const Text('User API withot Model'),
           ),
           body: Column(
             children: [
@@ -26,7 +26,7 @@ class _GetUserState extends State<GetUser> {
                   future: model.getuserData(),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.waiting) {
-                      return CircularProgressIndicator();
+                      return const CircularProgressIndicator();
                     } else {
                       return Expanded(
                         child: ListView.builder(

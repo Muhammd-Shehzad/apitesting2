@@ -1,5 +1,4 @@
-import 'package:apitesting2/Ui/APIsWithModel/GetComment/get_comment.dart';
-import 'package:apitesting2/Ui/APIsWithModel/GetPhoto/get_photo.dart';
+import 'package:apitesting2/Ui/SingleObjectApi/single_object_user.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -11,8 +10,7 @@ void main() {
       splitScreenMode: true,
       minTextAdapt: true,
       builder: (context, child) => const GetMaterialApp(
-        home: GetPhoto(),
-        // GetComment(),
+        home: SingleObjectUser(),
       ),
     ),
   );

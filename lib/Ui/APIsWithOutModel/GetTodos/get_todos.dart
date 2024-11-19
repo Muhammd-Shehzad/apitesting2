@@ -19,13 +19,13 @@ class _GetTodosState extends State<GetTodos> {
       child: Consumer<TodosProvider>(
         builder: (context, model, child) => Scaffold(
           appBar: AppBar(
-            title: Text('ToDos APIs'),
+            title: const Text('ToDos APIs'),
           ),
           body: FutureBuilder(
             future: model.getTodosData(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return CircularProgressIndicator();
+                return const CircularProgressIndicator();
               } else {
                 return Expanded(
                   child: ListView.builder(
